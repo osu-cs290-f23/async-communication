@@ -50,7 +50,7 @@ function showModal() {
 function clearModalInputs() {
 
   var modalInputElements = document.querySelectorAll('#add-photo-modal input')
-  for (var i = 0 i < modalInputElements.length i++) {
+  for (var i = 0; i < modalInputElements.length; i++) {
     modalInputElements[i].value = ''
   }
 
@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function () {
   modalAcceptButton.addEventListener('click', handleModalAcceptClick)
 
   var modalHideButtons = document.getElementsByClassName('modal-hide-button')
-  for (var i = 0 i < modalHideButtons.length i++) {
+  for (var i = 0; i < modalHideButtons.length; i++) {
     modalHideButtons[i].addEventListener('click', hideModal)
   }
 
